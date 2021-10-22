@@ -18,11 +18,11 @@ public class Picture
     private Square ground;
 
     /**
-     * Constructor for objects of class Picture
+     * Sun goes down
      */
-    public Picture()
+    public void atardecer()
     {
-        // nothing to do... instance variables are automatically set to null
+        sun.slowMoveVertical(150);
     }
 
     /**
@@ -65,6 +65,7 @@ public class Picture
         ground.makeVisible();
         
         sun.slowMoveVertical(-120);
+    
     }
 
     /**
