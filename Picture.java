@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square ground;
+    private Person person;
 
     /**
      * Sun goes down
@@ -23,6 +24,15 @@ public class Picture
     public void atardecer()
     {
         sun.slowMoveVertical(150);
+        
+        person = new Person();
+        person.moveHorizontal(-250);
+        person.moveVertical(30);
+        person.makeVisible();
+        person.slowMoveHorizontal(100);
+        
+        
+        
     }
 
     /**
